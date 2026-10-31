@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-pos" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#26282e" />
+      <stop offset="60%" stop-color="#18191d" />
+      <stop offset="100%" stop-color="#101114" />
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
+    </linearGradient>
+
+    <pattern id="grid-pos" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.04" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg-pos)" />
+  <rect width="1200" height="900" fill="url(#grid-pos)" />
+
+  <rect x="40" y="40" width="1120" height="820" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.08" />
+
+  <!-- Header Title Block -->
+  <g transform="translate(70, 90)">
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="4" fill="#38bdf8" font-weight="600" text-transform="uppercase">
+      FULL-STACK WEB APP · ENTERPRISE SYSTEM
+    </text>
+    <text font-family="'Cinzel', Georgia, serif" font-size="26" fill="#f3f4f6" y="32">
+      Lorem Ipsum Project One
+    </text>
+    <text font-family="monospace" font-size="11" fill="#717684" y="52" letter-spacing="1">
+      REACT · TYPESCRIPT · NODE.JS · POSTGRESQL · REAL-TIME TELEMETRY
+    </text>
+  </g>
+
+  <!-- Technical Schematic: POS & Inventory Analytics UI -->
+  <g transform="translate(180, 240)">
+    <!-- Main Dashboard Container -->
+    <rect x="0" y="0" width="840" height="480" rx="12" fill="#1b1c21" stroke="#3b3e4a" stroke-width="1.5" />
+
+    <!-- Top Window Controls Bar -->
+    <rect x="0" y="0" width="840" height="40" rx="12" fill="#24262d" />
+    <circle cx="25" cy="20" r="5" fill="#ef4444" opacity="0.6" />
+    <circle cx="45" cy="20" r="5" fill="#eab308" opacity="0.6" />
+    <circle cx="65" cy="20" r="5" fill="#22c55e" opacity="0.6" />
+    <text x="420" y="24" text-anchor="middle" font-family="monospace" font-size="11" fill="#8e93a0">
+      POS-ADMIN.CONSOLE // LIVE_INVENTORY_METRICS
+    </text>
+
+    <!-- Sidebar Wireframe -->
+    <rect x="0" y="40" width="180" height="440" fill="#17181d" stroke="#2d3039" stroke-width="1" />
+    <rect x="20" y="65" width="140" height="28" rx="6" fill="#282b34" />
+    <rect x="20" y="105" width="140" height="24" rx="4" fill="#202228" />
+    <rect x="20" y="140" width="140" height="24" rx="4" fill="#202228" />
+    <rect x="20" y="175" width="140" height="24" rx="4" fill="#202228" />
+    <rect x="20" y="210" width="140" height="24" rx="4" fill="#202228" />
+
+    <!-- 3 Metric Cards in Minimalist Grey -->
+    <rect x="210" y="65" width="180" height="85" rx="8" fill="#22242b" stroke="#3a3d47" stroke-width="1" />
+    <text x="225" y="90" font-family="monospace" font-size="10" fill="#8c919e">DAILY REVENUE</text>
+    <text x="225" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" fill="#f8fafc" font-weight="600">$148,920</text>
+    <text x="350" y="125" font-family="monospace" font-size="10" fill="#38bdf8">+14.2%</text>
+
+    <rect x="410" y="65" width="180" height="85" rx="8" fill="#22242b" stroke="#3a3d47" stroke-width="1" />
+    <text x="425" y="90" font-family="monospace" font-size="10" fill="#8c919e">STOCK TRANSACTIONS</text>
+    <text x="425" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" fill="#f8fafc" font-weight="600">1,842</text>
+    <text x="550" y="125" font-family="monospace" font-size="10" fill="#38bdf8">SYNCED</text>
+
+    <rect x="610" y="65" width="200" height="85" rx="8" fill="#22242b" stroke="#3a3d47" stroke-width="1" />
+    <text x="625" y="90" font-family="monospace" font-size="10" fill="#8c919e">POSTGRESQL REPLICATION</text>
+    <text x="625" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" fill="#38bdf8" font-weight="600">ACTIVE · 0.4ms</text>
+
+    <!-- Telemetry Graph / Bar Chart -->
+    <rect x="210" y="170" width="600" height="280" rx="8" fill="#1c1d23" stroke="#32353f" stroke-width="1" />
+    <text x="230" y="195" font-family="monospace" font-size="11" fill="#9ea3af">
+      REAL-TIME SALES VELOCITY &amp; STOCK BUFFER
+    </text>
+
+    <!-- Graph Axis & Grid Lines -->
+    <line x1="240" y1="220" x2="780" y2="220" stroke="#282a32" stroke-width="1" stroke-dasharray="2 3" />
+    <line x1="240" y1="270" x2="780" y2="270" stroke="#282a32" stroke-width="1" stroke-dasharray="2 3" />
+    <line x1="240" y1="320" x2="780" y2="320" stroke="#282a32" stroke-width="1" stroke-dasharray="2 3" />
+    <line x1="240" y1="370" x2="780" y2="370" stroke="#282a32" stroke-width="1" stroke-dasharray="2 3" />
+    <line x1="240" y1="410" x2="780" y2="410" stroke="#4b4f5d" stroke-width="1.2" />
+
+    <!-- Polyline Chart Wave -->
+    <path d="M 240 380 Q 300 320, 360 350 T 480 260 T 600 290 T 720 230 L 780 250" fill="none" stroke="url(#accent-cyan)" stroke-width="2.5" />
+    <circle cx="780" cy="250" r="4" fill="#38bdf8" />
+  </g>
+
+  <!-- Bottom Legend -->
+  <g transform="translate(70, 810)">
+    <line x1="0" y1="0" x2="1060" y2="0" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.1" />
+    <text x="0" y="28" font-family="monospace" font-size="10" fill="#6d7280" letter-spacing="2">
+      STACK: REACT · TYPESCRIPT · NODE.JS · POSTGRESQL · TAILWIND
+    </text>
+    <text x="1060" y="28" text-anchor="end" font-family="monospace" font-size="10" fill="#38bdf8" letter-spacing="2">
+      LOREM IPSUM TEMPLATE
+    </text>
+  </g>
+</svg>

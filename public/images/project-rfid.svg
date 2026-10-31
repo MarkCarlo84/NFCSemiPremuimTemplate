@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-rfid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22242a" />
+      <stop offset="50%" stop-color="#16171b" />
+      <stop offset="100%" stop-color="#0f1013" />
+    </linearGradient>
+
+    <radialGradient id="rfid-pulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#0ea5e9" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg-rfid)" />
+
+  <rect x="40" y="40" width="1120" height="820" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.08" />
+
+  <!-- Header Title Block -->
+  <g transform="translate(70, 90)">
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="4" fill="#38bdf8" font-weight="600" text-transform="uppercase">
+      IOT &amp; SECURITY SYSTEM · HARDWARE INTEGRATION
+    </text>
+    <text font-family="'Cinzel', Georgia, serif" font-size="26" fill="#f3f4f6" y="32">
+      Lorem Ipsum Project Two
+    </text>
+    <text font-family="monospace" font-size="11" fill="#717684" y="52" letter-spacing="1">
+      NEXT.JS · EXPRESS · RFID SCANNERS · WEBSOCKET LIVE TELEMETRY &amp; HEATMAPS
+    </text>
+  </g>
+
+  <!-- Technical Schematic: RFID Scanner & Gateway Architecture -->
+  <g transform="translate(600, 480)">
+    <circle r="260" fill="url(#rfid-pulse)" />
+    
+    <!-- Outer Gateway Rings (Antenna Coil Simulation) -->
+    <circle r="220" fill="none" stroke="#2d3039" stroke-width="1.2" />
+    <circle r="180" fill="none" stroke="#3d414f" stroke-width="1.5" stroke-dasharray="3 4" />
+    <circle r="140" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.6" />
+
+    <!-- RFID Sensor Center Hub -->
+    <rect x="-100" y="-70" width="200" height="140" rx="10" fill="#1b1c21" stroke="#525768" stroke-width="1.5" />
+    <rect x="-85" y="-55" width="170" height="70" rx="6" fill="#131418" stroke="#30333d" stroke-width="1" />
+    
+    <text x="0" y="-20" text-anchor="middle" font-family="monospace" font-size="13" fill="#38bdf8" letter-spacing="2">
+      RFID // SCAN_ACTIVE
+    </text>
+    <text x="0" y="2" text-anchor="middle" font-family="monospace" font-size="10" fill="#8c919e">
+      FREQ: 13.56 MHz · ISO14443A
+    </text>
+
+    <!-- Status Indicator LED -->
+    <circle cx="0" cy="35" r="5" fill="#22c55e" />
+    <circle cx="0" cy="35" r="9" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.5" />
+
+    <!-- Left & Right Telemetry Panels -->
+    <!-- Left Panel: Turnstile Node 01 -->
+    <g transform="translate(-400, -100)">
+      <rect x="0" y="0" width="220" height="200" rx="8" fill="#1a1b20" stroke="#32353f" stroke-width="1" />
+      <text x="15" y="25" font-family="monospace" font-size="10" fill="#38bdf8">NODE 01: MAIN ENTRANCE</text>
+      <text x="15" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" fill="#f8fafc" font-weight="600">3,418 TAPS</text>
+      <text x="15" y="80" font-family="monospace" font-size="10" fill="#8c919e">LATENCY: 12ms</text>
+      <line x1="15" y1="100" x2="205" y2="100" stroke="#2d303a" stroke-width="1" />
+      <text x="15" y="125" font-family="monospace" font-size="10" fill="#22c55e">● GATE AUTHENTICATED</text>
+      <text x="15" y="150" font-family="monospace" font-size="9" fill="#6d7280">UID: 0x4B:9E:21:88:C0</text>
+    </g>
+
+    <!-- Right Panel: Building Capacity Heatmap -->
+    <g transform="translate(180, -100)">
+      <rect x="0" y="0" width="220" height="200" rx="8" fill="#1a1b20" stroke="#32353f" stroke-width="1" />
+      <text x="15" y="25" font-family="monospace" font-size="10" fill="#38bdf8">CAPACITY TELEMETRY</text>
+      <text x="15" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" fill="#f8fafc" font-weight="600">78% OCCUPANCY</text>
+      <text x="15" y="80" font-family="monospace" font-size="10" fill="#8c919e">CAMPUS AUDITORIUM</text>
+      <line x1="15" y1="100" x2="205" y2="100" stroke="#2d303a" stroke-width="1" />
+      <rect x="15" y="120" width="190" height="12" rx="4" fill="#262832" />
+      <rect x="15" y="120" width="148" height="12" rx="4" fill="#38bdf8" />
+      <text x="15" y="155" font-family="monospace" font-size="9" fill="#6d7280">SECURITY AUDIT LOGS ACTIVE</text>
+    </g>
+
+    <!-- Communication Bridge Lines -->
+    <line x1="-180" y1="0" x2="-100" y2="0" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3" />
+    <line x1="100" y1="0" x2="180" y2="0" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3" />
+  </g>
+
+  <!-- Bottom Legend -->
+  <g transform="translate(70, 810)">
+    <line x1="0" y1="0" x2="1060" y2="0" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.1" />
+    <text x="0" y="28" font-family="monospace" font-size="10" fill="#6d7280" letter-spacing="2">
+      STACK: NEXT.JS · EXPRESS · HARDWARE SERIAL PROTOCOL · TAILWIND CSS
+    </text>
+    <text x="1060" y="28" text-anchor="end" font-family="monospace" font-size="10" fill="#38bdf8" letter-spacing="2">
+      LOREM IPSUM TEMPLATE
+    </text>
+  </g>
+</svg>

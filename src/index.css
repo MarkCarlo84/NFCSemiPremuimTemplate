@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "./styles/themes.css";
+
+/* Base styling */
+* {
+  border-color: var(--theme-border);
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--theme-font-body, system-ui, sans-serif);
+}
+
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-accent);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Luxury Glassmorphism Surface */
+.glass-panel {
+  background: var(--theme-surface-translucent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--theme-border);
+}
+
+/* Premium Card with subtle metallic hover */
+.luxury-card {
+  background: var(--theme-surface);
+  border: 1px solid var(--theme-border);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: var(--theme-border-hover);
+  box-shadow: 0 12px 30px -10px var(--theme-accent-glow);
+}
+
+/* Shimmer Button Light Sweep */
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.28),
+    transparent
+  );
+  transform: translateX(-150%) skewX(-20deg);
+  animation: shimmerSweep 4.5s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* Subtle image scale on hover */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.05);
+}

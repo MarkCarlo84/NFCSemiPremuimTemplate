@@ -1,0 +1,88 @@
+/* =========================================================================
+   BLACK & WHITE MONOCHROME THEMES (DARK & LIGHT)
+   Minimalist Luxury Digital Business Card System
+   ========================================================================= */
+
+/* Dark Mode (High-End Pure Black & Zinc Monochrome) */
+[data-theme="dark"], [data-theme="obsidian"], :root {
+  --theme-mode: dark;
+  --theme-desktop-bg: #070709;
+  --theme-bg: #09090b;
+  --theme-bg-translucent: rgba(9, 9, 11, 0.88);
+  --theme-surface: #141416;
+  --theme-surface-hover: #1e1e22;
+  --theme-surface-translucent: rgba(20, 20, 22, 0.8);
+  --theme-border: rgba(255, 255, 255, 0.12);
+  --theme-border-hover: rgba(255, 255, 255, 0.4);
+  --theme-border-subtle: rgba(255, 255, 255, 0.05);
+  --theme-text-primary: #ffffff;
+  --theme-text-secondary: #a1a1aa;
+  --theme-text-muted: #71717a;
+  --theme-accent: #ffffff;
+  --theme-accent-hover: #e4e4e7;
+  --theme-accent-subtle: rgba(255, 255, 255, 0.1);
+  --theme-accent-glow: rgba(255, 255, 255, 0.15);
+  --theme-font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --theme-font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --theme-badge-bg: rgba(255, 255, 255, 0.08);
+  --theme-badge-text: #f4f4f5;
+  --theme-pill-bg: rgba(255, 255, 255, 0.05);
+  --theme-btn-bg: #ffffff;
+  --theme-btn-text: #000000;
+  --theme-btn-hover: #e4e4e7;
+}
+
+/* Light Mode (Crisp Luxury Black & White Monochrome) */
+[data-theme="light"], [data-theme="ivory"] {
+  --theme-mode: light;
+  --theme-desktop-bg: #ebebed;
+  --theme-bg: #ffffff;
+  --theme-bg-translucent: rgba(255, 255, 255, 0.92);
+  --theme-surface: #f4f4f5;
+  --theme-surface-hover: #e4e4e7;
+  --theme-surface-translucent: rgba(244, 244, 245, 0.85);
+  --theme-border: rgba(0, 0, 0, 0.12);
+  --theme-border-hover: rgba(0, 0, 0, 0.4);
+  --theme-border-subtle: rgba(0, 0, 0, 0.06);
+  --theme-text-primary: #09090b;
+  --theme-text-secondary: #52525b;
+  --theme-text-muted: #71717a;
+  --theme-accent: #09090b;
+  --theme-accent-hover: #27272a;
+  --theme-accent-subtle: rgba(0, 0, 0, 0.07);
+  --theme-accent-glow: rgba(0, 0, 0, 0.1);
+  --theme-font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --theme-font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --theme-badge-bg: rgba(0, 0, 0, 0.06);
+  --theme-badge-text: #18181b;
+  --theme-pill-bg: rgba(0, 0, 0, 0.04);
+  --theme-btn-bg: #09090b;
+  --theme-btn-text: #ffffff;
+  --theme-btn-hover: #27272a;
+}
+
+/* Custom Typography & Utility Classes */
+.font-theme-heading {
+  font-family: var(--theme-font-heading);
+}
+
+.font-theme-body {
+  font-family: var(--theme-font-body);
+}
+
+/* Monochrome Grain Overlay Effect */
+.bg-luxury-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+[data-theme="light"] .bg-luxury-grain,
+[data-theme="ivory"] .bg-luxury-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Smooth theme transitions */
+body, [data-theme], .luxury-card, .glass-panel {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}

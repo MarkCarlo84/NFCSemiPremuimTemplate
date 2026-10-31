@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Monochrome Dark Studio Gradients -->
+    <linearGradient id="avatar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#242428" />
+      <stop offset="50%" stop-color="#141416" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <radialGradient id="avatar-spotlight" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6" />
+    </radialGradient>
+
+    <!-- Refined Silver Metallic Gradients -->
+    <linearGradient id="silver-sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#d4d4d8" />
+      <stop offset="70%" stop-color="#71717a" />
+      <stop offset="100%" stop-color="#a1a1aa" />
+    </linearGradient>
+
+    <linearGradient id="silhouette-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#e4e4e7" />
+      <stop offset="35%" stop-color="#a1a1aa" />
+      <stop offset="75%" stop-color="#3f3f46" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+
+    <linearGradient id="shoulder-fill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#52525b" />
+      <stop offset="50%" stop-color="#27272a" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="500" height="500" fill="url(#avatar-bg)" />
+  <rect width="500" height="500" fill="url(#avatar-spotlight)" />
+
+  <!-- Subtle Digital Identity Rings -->
+  <g opacity="0.35">
+    <circle cx="250" cy="250" r="230" fill="none" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.2" />
+    <circle cx="250" cy="250" r="215" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3 6" stroke-opacity="0.25" />
+    <circle cx="250" cy="250" r="195" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.15" />
+  </g>
+
+  <!-- Outer Architectural Framing -->
+  <rect x="18" y="18" width="464" height="464" rx="28" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.12" />
+  <rect x="26" y="26" width="448" height="448" rx="22" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.06" />
+
+  <!-- Corner Precision Crosshairs -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.4">
+    <path d="M 22 34 L 38 34 M 30 26 L 30 42" />
+    <path d="M 462 34 L 478 34 M 470 26 L 470 42" />
+    <path d="M 22 466 L 38 466 M 30 458 L 30 474" />
+    <path d="M 462 466 L 478 466 M 470 458 L 470 474" />
+  </g>
+
+  <!-- Top Monogram & Digital Identity Code -->
+  <text x="250" y="52" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" letter-spacing="4" fill="#a1a1aa" text-transform="uppercase" opacity="0.8">
+    DIGITAL IDENTITY · NFC
+  </text>
+
+  <!-- Backlight Halo behind Silhouette -->
+  <circle cx="250" cy="205" r="95" fill="#ffffff" opacity="0.06" filter="url(#subtle-glow)" />
+
+  <!-- Sculpted Modern Person Silhouette -->
+  <g transform="translate(0, 15)">
+    <!-- Shoulders & Torso -->
+    <path d="M 115 440 C 115 365, 160 320, 215 305 L 215 280 C 225 285, 238 288, 250 288 C 262 288, 275 285, 285 280 L 285 305 C 340 320, 385 365, 385 440 Z" 
+          fill="url(#shoulder-fill)" 
+          stroke="#ffffff" 
+          stroke-width="1" 
+          stroke-opacity="0.2" />
+
+    <!-- Jacket Collar / V-Lapel Architectural Detail -->
+    <path d="M 215 305 L 250 380 L 285 305" 
+          fill="none" 
+          stroke="url(#silver-sheen)" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          opacity="0.7" />
+
+    <line x1="250" y1="380" x2="250" y2="440" 
+          stroke="#ffffff" 
+          stroke-width="1" 
+          stroke-opacity="0.15" />
+
+    <!-- Neck & Jawline Structure -->
+    <path d="M 224 250 L 224 286 C 232 290, 241 292, 250 292 C 259 292, 268 290, 276 286 L 276 250 Z" 
+          fill="url(#silhouette-fill)" 
+          opacity="0.9" />
+
+    <!-- Head / Profile Shape -->
+    <ellipse cx="250" cy="195" rx="66" ry="82" 
+             fill="url(#silhouette-fill)" 
+             stroke="url(#silver-sheen)" 
+             stroke-width="1.2" 
+             stroke-opacity="0.6" />
+
+    <!-- Minimalist Hair / Architectural Contour Line -->
+    <path d="M 188 190 C 185 140, 215 118, 250 118 C 285 118, 315 140, 312 190 C 300 135, 275 125, 250 125 C 225 125, 200 135, 188 190 Z" 
+          fill="#ffffff" 
+          opacity="0.25" />
+
+    <!-- Subtle Metallic Specular Arc on Crown -->
+    <path d="M 210 135 C 230 125, 270 125, 290 135" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          opacity="0.4" />
+  </g>
+
+  <!-- Bottom Technical Contactless NFC Wave Graphic -->
+  <g transform="translate(250, 448)" stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.6" stroke-linecap="round">
+    <path d="M -16 0 A 20 20 0 0 1 -16 16" />
+    <path d="M -9 3 A 12 12 0 0 1 -9 13" />
+    <path d="M -2 6 A 5 5 0 0 1 -2 10" />
+    <circle cx="5" cy="8" r="1.5" fill="#ffffff" />
+    <text x="14" y="11" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" letter-spacing="2" fill="#ffffff" stroke="none" font-weight="600">NFC</text>
+  </g>
+</svg>
